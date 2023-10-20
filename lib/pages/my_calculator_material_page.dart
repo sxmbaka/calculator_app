@@ -13,8 +13,24 @@ class _MyCalculatorPageState extends State<MyCalculatorPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 255, 143, 0),
-        title: const Text('My Calculator'),
+        backgroundColor: Colors.amber[800],
+        title: const Row(
+          children: [
+            IconButton(
+              icon: Icon(Icons.menu),
+              tooltip: 'Navigation menu',
+              onPressed: null,
+            ),
+            Expanded(
+              child: Text('My Calculator'),
+            ),
+            IconButton(
+              icon: Icon(Icons.search),
+              tooltip: 'Search',
+              onPressed: null,
+            ),
+          ],
+        ),
       ),
       backgroundColor: Colors.amber,
       // floatingActionButton: const FloatingActionButton(

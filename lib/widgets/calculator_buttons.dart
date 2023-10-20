@@ -33,3 +33,20 @@ class CalculatorButton extends StatelessWidget {
     );
   }
 }
+
+class StandardCalculatorButton extends StatelessWidget {
+  const StandardCalculatorButton(
+      {super.key, required this.buttonInnerWidget, required this.onPressed});
+  final Widget buttonInnerWidget;
+  final Function onPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    return CalculatorButton(
+      buttonHeight: 100,
+      buttonWidth: 100,
+      buttonInnerWidget: buttonInnerWidget,
+      onPressed: onPressed,
+    );
+  }
+}
