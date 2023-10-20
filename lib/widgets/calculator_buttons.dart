@@ -5,10 +5,12 @@ class CalculatorButton extends StatelessWidget {
       {super.key,
       required this.buttonHeight,
       required this.buttonWidth,
-      required this.buttonInnerWidget});
+      required this.buttonInnerWidget,
+      required this.onPressed});
 
   final double buttonHeight, buttonWidth;
   final Widget buttonInnerWidget;
+  final Function onPressed;
   @override
   Widget build(BuildContext context) {
     return Container(
