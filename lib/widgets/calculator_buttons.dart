@@ -20,7 +20,7 @@ class CalculatorButton extends StatelessWidget {
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           backgroundColor: Colors.grey[300],
-          fixedSize: Size(buttonHeight, buttonWidth),
+          fixedSize: Size(buttonWidth, buttonHeight),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(50),
           ),
